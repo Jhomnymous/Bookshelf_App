@@ -90,6 +90,7 @@ function allData() {
     
     //Table for unread
     let table = document.getElementById("table");
+    table.innerHTML = "";
     
     let bookList = JSON.parse(localStorage.getItem("listItem4")) ?? [];
     
@@ -130,7 +131,7 @@ function allData() {
     
     //Table for read
     let table2 = document.getElementById("table2");
-    
+    table2.innerHTML = "";
     let bookList2 = JSON.parse(localStorage.getItem("listItem3")) ?? [];
     
     bookList2.forEach((value2, i) => {
